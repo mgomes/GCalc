@@ -1,6 +1,6 @@
 h1. Command line calculator powered by Google
 
-This little tiny 3-line Ruby script uses the power of Google search to give you a simple, yet powerful, command line calculator.
+   This little tiny 3-line Ruby script uses the power of Google search to give you a simple, yet powerful, command line calculator.
             
 h2. Requirements
 
@@ -10,7 +10,6 @@ h2. Requirements
 * Ruby Gems
 
 h2. Usage   
-   
    <pre><code>  
    ~> ruby g.rb "20 + 30 * 1/2"
    ~> 20 + ((30 * 1) / 2) = 35
