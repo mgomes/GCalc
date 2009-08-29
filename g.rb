@@ -3,6 +3,6 @@
 #
 # (c) 2009 Mauricio Gomes <mauricio@edge14.com>
 
-%w(rubygems open-uri hpricot erb).each {|lib| require lib }
-doc = Hpricot(open("http://www.google.com/search?q=#{ERB::Util.u(ARGV*' ')}"))
-puts doc.search("h2.r").inner_text
+%w(rubygems mechanize erb).each {|lib| require lib }
+doc = WWW::Mechanize.new.get("http://www.google.com/search?q=#{ERB::Util.u(ARGV*' ')}")
+puts doc.search("//h2[@class='r']").inner_text
