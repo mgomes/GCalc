@@ -1,3 +1,4 @@
+#!/usr/bin/ruby
 # GCalc - Command line calculator powered by google
 # Usage: ruby g.rb "20 + 30 * 1/2"
 #
