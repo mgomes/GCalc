@@ -1,0 +1,29 @@
+= GCalc
+
+Command line calculator powered by Google Search.
+            
+== Requirements
+
+* Mechanize
+* erb
+
+== Usage  
+	~> ruby g.rb "20 + 30 * 1/2"
+	20 + ((30 * 1) / 2) = 35
+   
+	~> ruby g.rb 20ft to yards
+	20 feet = 6.66666667 yards
+   
+	~> ruby g.rb 300ft to furlongs
+	300 feet = 0.454545455 furlongs
+   
+	~> ruby g.rb 200 pesos to euros
+	200 Mexican pesos = 11.1106714 Euros
+
+== Changes
+
+* 1.0: It's been released into the wild.
+
+== Author
+
+(c) 2009 Mauricio Gomes
