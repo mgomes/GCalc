@@ -5,5 +5,5 @@
 # (c) 2009 Mauricio Gomes <mauricio@edge14.com>
 
 %w(rubygems mechanize erb).each {|lib| require lib }
-doc = WWW::Mechanize.new.get("http://www.google.com/search?q=#{ERB::Util.u(ARGV*' ')}")
+doc = Mechanize.new.get("http://www.google.com/search?q=#{ERB::Util.u(ARGV*' ')}")
 puts doc.search("//h2[@class='r']").inner_text
